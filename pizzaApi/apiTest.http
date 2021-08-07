@@ -1,0 +1,78 @@
+GET http://localhost:3000
+
+
+###
+
+POST http://localhost:3000/api/users
+
+{
+    "firstName":"brandon",
+    "lastName":"lesr",
+    "email":"b112@me.com",
+    "address":"123 main st"
+}
+
+###
+
+PUT http://localhost:3000/users
+token: 
+
+{
+    "email":"",
+    "address":""
+}
+
+###
+
+DELETE http://localhost:3000/users?email=
+token: 
+###
+
+POST http://localhost:3000/tokens
+
+{
+    "email":""
+}
+
+###
+
+DELETE http://localhost:3000/tokens?id=
+
+###
+
+GET http://localhost:3000/menu
+token: 
+
+
+###
+
+POST http://localhost:3000/cart
+token: 
+
+{
+    "email":"",
+    "cart":""
+}
+
+###
+
+GET http://localhost:3000/cart?id=
+token: 
+
+###
+
+DELETE http://localhost:3000/cart?id=
+token: 
+
+###
+
+POST http://localhost:3000/checkout
+token: 
+
+{
+    "cart":"",
+    "ccNumber": "5555555555554444",
+    "ccExpMonth": "11",
+    "ccExpYear": "2023",
+    "ccCvc": "123"
+}
